@@ -47,3 +47,5 @@ docker compose -f docker/prod/docker-compose.yml up -d
 
 ## CI/CD
 - See docs/CI-CD.md for GitHub Actions pipelines (CI, Docker publish, SSH deploy).
+
+### REMOVED ACTIONS FROM REPO
