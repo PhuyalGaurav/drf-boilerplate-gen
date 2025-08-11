@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Django migrations (users)",
+			"type": "shell",
+			"command": "docker compose -f docker/local/docker-compose.yml run --rm web python manage.py makemigrations users && docker compose -f docker/local/docker-compose.yml run --rm web python manage.py migrate",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Run Django migrations (users)",
+			"type": "shell",
+			"command": "docker compose -f docker/local/docker-compose.yml run --rm web python manage.py makemigrations users && docker compose -f docker/local/docker-compose.yml run --rm web python manage.py migrate",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
