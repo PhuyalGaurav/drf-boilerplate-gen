@@ -58,7 +58,7 @@ pushd "$TARGET_DIR" >/dev/null
 cat > .env <<ENV
 DEBUG=${DEBUG}
 SECRET_KEY=${SECRET_KEY}
-DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/db
 ENV
 
 mkdir -p docker/prod
